@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #392E2E;
+}
+
+html, body{
+    height: 95%;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #46D9E2;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;    
+    padding: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+}
+
+/* AREA PRINCIPAL */
+main {
+    background-color: black;
+    color: white;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.texto{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 38px;
+}
+
+.texto-gameover {
+    font-size: 32px;
+}
+
+.texto-score{
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+.botao{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao button {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #d0d6d9;
+    padding: 10px 20px 10px 20px;
+    border: solid #667a85 6px;
+}
+  
+.botao button:hover{
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    cursor: pointer;
+}
