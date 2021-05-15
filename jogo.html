@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Cursor Invisible</title>
 </head>
-<body onresize="tamanhoTela()">
+<body>
     <header>
         <nav><a href="#">CURSOR INVISIVEL</a></nav>
     </header>
 
     <main  id="janelaPrincipal">
-        <!-- <img id="circulo" src="circulo-branco.png" alt="" width="150"> -->
+        <div class="itensJanelaPrincipal">
+            <div class="divScore">
+                <h1>Score: <span id="score">0</span></h1>
+            </div>
+            <div class="barraProgresso">
+                <div id="progresso" class="progressoTempo"></div>
+            </div>
+        </div>
     </main>
 
     <script src="js/script.js"></script>
+
     <script>
-        var criaCirculo = posicaoRandomica()
+        var criaCirculo = setInterval(function(){
+            posicaoRandomica()
+        }, criaCirculoTempo)
+        move()
     </script>
 </body>
 </html>
