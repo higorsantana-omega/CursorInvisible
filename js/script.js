@@ -1,6 +1,17 @@
+setTimeout(function () {
+    document.getElementById('janelaPrincipal').style.cursor = 'none'
+}, 3000)
+
+function cliqueMouse() {
+    var efeitoMouse = document.createElement(img)
+    efeitoMouse.src = 'c.png'
+    document.getElementById('janelaPrincipal').appendChild(efeitoMouse)
+}
+
 // Iniciar jogo
 function iniciarJogo() {
     window.location.href = 'jogo.html'
+    
 }
 
 // Variaveis da altura e largura do main
